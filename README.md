@@ -7,9 +7,9 @@ A processing framework designed to add flexibility for short association fibre t
 ### Main features
 
 - Options for filtering at the grey-white interface
-- Indexing of the closest cortical mesh for each streamline termination enabling to relate streamline- and surface-based data
-- Modularity (processing steps can be replaced) and support for optional post-processing modules
-- Intuitive data structure to facilitate creation of custom scripts
+- Indexing of the closest cortical mesh vertex for each streamline termination enabling to relate streamline- and surface-based data
+- Modularity - most processing steps can be individually replaced or turned off
+- Intuitive data structure to facilitate creation of custom scripts which be easily appended
 - Summary statistics
 
 ### Documentation

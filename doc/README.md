@@ -22,7 +22,7 @@ This optional filter removes streamlines that course outside the brain. It works
 
 ## Additional tractogram-wise modules
 
-Any modules that require whole-brain tractogram processing before the tractogram is reduced to SAF-specific streamlines are executed here. Currently more of a placeholder, it enables allocation of whole-brain tractogram weights to individual streamlines (input: `sl_weights`) and application of maximum streamline length filter (input: `maxlen`) that is enforced after any whole-brain processing takes place. Once this processing is complete, streamlines that do not terminate in non-neocortical grey matter are no longer handled.
+Any modules that require whole-brain tractogram processing before the tractogram is reduced to SAF-specific streamlines are meant to be executed here. Currently more of a placeholder for the future, it currently enables allocation of whole-brain tractogram weights to individual streamlines (input: `sl_weights`) and application of maximum streamline length filter (input: `maxlen`) that is enforced after any whole-brain processing takes place. 
 
 ## GWG filter
 

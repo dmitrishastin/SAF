@@ -81,12 +81,12 @@ function [SD, PS] = SAF_pipeline(varargin)
     end
     clear PP
       
-    %% run the GG-HH filtering (acts a pseudo ACT filter for SIFT/SIFT2 as well)
+    %% run the GG-HH filtering
 
     [PS, SD] = filters_GG_HH(PS, SD);
     update_log(PS);
     
-    %% apply the PG filter (detects intersection with pial surface - association fibres only)
+    %% apply the PG filter
     
     [PS, SD.DWI] = filters_PG(PS,SD.DWI);     
     if PS.dgn && (~old_SD || PS.force)
@@ -94,7 +94,7 @@ function [SD, PS] = SAF_pipeline(varargin)
     end
     update_log(PS);
 
-    %% apply additional filters (sift/sift2/maxlen)
+    %% apply additional filters
     
     [PS, SD] = wholebrain_operations(PS, SD);
     update_log(PS);
