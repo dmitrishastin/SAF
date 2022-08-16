@@ -158,7 +158,7 @@ function save_progress(SD, PS, varargin)
         if ~isempty(varargin)
             disp('Saving final matlab files')
             SD.DWI.saf.t_gghh   = uint32(SD.DWI.saf.t_gghh);
-            SD.DWI.saf.t_gwg    = uint32(SD.DWI.saf.t_gghh);
+            SD.DWI.saf.t_gwg    = uint32(SD.DWI.saf.t_gwg);
             SD.DWI.saf.m        = uint32(SD.DWI.saf.m);
             SD.DWI.saf.pre_c    = uint32(SD.DWI.saf.pre_c);
             SD.DWI.saf.pre_h    = uint32(SD.DWI.saf.pre_h);
